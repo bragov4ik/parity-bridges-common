@@ -17,228 +17,228 @@ members = [
 # Once XCMv3 PR is merged, we may remove both Substrate and Polkadot patch section.
 
 [patch."https://github.com/paritytech/substrate"]
-beefy-gadget = { path = "../substrate-sora/client/beefy" }
-beefy-gadget-rpc = { path = "../substrate-sora/client/beefy/rpc" }
-beefy-merkle-tree = { path = "../substrate-sora/frame/beefy-mmr/primitives" }
-beefy-primitives = { path = "../substrate-sora/primitives/beefy" }
-fork-tree = { path = "../substrate-sora/utils/fork-tree" }
-frame-benchmarking = { path = "../substrate-sora/frame/benchmarking" }
-frame-benchmarking-cli = { path = "../substrate-sora/utils/frame/benchmarking-cli" }
-frame-election-provider-solution-type = { path = "../substrate-sora/frame/election-provider-support/solution-type" }
-frame-election-provider-support = { path = "../substrate-sora/frame/election-provider-support" }
-frame-executive = { path = "../substrate-sora/frame/executive" }
-frame-support = { path = "../substrate-sora/frame/support" }
-frame-support-procedural = { path = "../substrate-sora/frame/support/procedural" }
-frame-support-procedural-tools = { path = "../substrate-sora/frame/support/procedural/tools" }
-frame-support-procedural-tools-derive = { path = "../substrate-sora/frame/support/procedural/tools/derive" }
-frame-system = { path = "../substrate-sora/frame/system" }
-frame-system-benchmarking = { path = "../substrate-sora/frame/system/benchmarking" }
-frame-system-rpc-runtime-api = { path = "../substrate-sora/frame/system/rpc/runtime-api" }
-frame-try-runtime = { path = "../substrate-sora/frame/try-runtime" }
-node-inspect = { path = "../substrate-sora/bin/node/inspect" }
-pallet-aura = { path = "../substrate-sora/frame/aura" }
-pallet-authority-discovery = { path = "../substrate-sora/frame/authority-discovery" }
-pallet-authorship = { path = "../substrate-sora/frame/authorship" }
-pallet-babe = { path = "../substrate-sora/frame/babe" }
-pallet-bags-list = { path = "../substrate-sora/frame/bags-list" }
-pallet-balances = { path = "../substrate-sora/frame/balances" }
-pallet-beefy = { path = "../substrate-sora/frame/beefy" }
-pallet-beefy-mmr = { path = "../substrate-sora/frame/beefy-mmr" }
-pallet-bounties = { path = "../substrate-sora/frame/bounties" }
-pallet-child-bounties = { path = "../substrate-sora/frame/child-bounties" }
-pallet-collective = { path = "../substrate-sora/frame/collective" }
-pallet-democracy = { path = "../substrate-sora/frame/democracy" }
-pallet-election-provider-multi-phase = { path = "../substrate-sora/frame/election-provider-multi-phase" }
-pallet-elections-phragmen = { path = "../substrate-sora/frame/elections-phragmen" }
-pallet-gilt = { path = "../substrate-sora/frame/gilt" }
-pallet-grandpa = { path = "../substrate-sora/frame/grandpa" }
-pallet-identity = { path = "../substrate-sora/frame/identity" }
-pallet-im-online = { path = "../substrate-sora/frame/im-online" }
-pallet-indices = { path = "../substrate-sora/frame/indices" }
-pallet-membership = { path = "../substrate-sora/frame/membership" }
-pallet-mmr = { path = "../substrate-sora/frame/merkle-mountain-range" }
-pallet-mmr-rpc = { path = "../substrate-sora/frame/merkle-mountain-range/rpc" }
-pallet-multisig = { path = "../substrate-sora/frame/multisig" }
-pallet-nicks = { path = "../substrate-sora/frame/nicks" }
-pallet-offences = { path = "../substrate-sora/frame/offences" }
-pallet-preimage = { path = "../substrate-sora/frame/preimage" }
-pallet-proxy = { path = "../substrate-sora/frame/proxy" }
-pallet-randomness-collective-flip = { path = "../substrate-sora/frame/randomness-collective-flip" }
-pallet-recovery = { path = "../substrate-sora/frame/recovery" }
-pallet-scheduler = { path = "../substrate-sora/frame/scheduler" }
-pallet-session = { path = "../substrate-sora/frame/session" }
-pallet-society = { path = "../substrate-sora/frame/society" }
-pallet-staking = { path = "../substrate-sora/frame/staking" }
-pallet-staking-reward-curve = { path = "../substrate-sora/frame/staking/reward-curve" }
-pallet-staking-reward-fn = { path = "../substrate-sora/frame/staking/reward-fn" }
-pallet-sudo = { path = "../substrate-sora/frame/sudo" }
-pallet-timestamp = { path = "../substrate-sora/frame/timestamp" }
-pallet-tips = { path = "../substrate-sora/frame/tips" }
-pallet-transaction-payment = { path = "../substrate-sora/frame/transaction-payment" }
-pallet-transaction-payment-rpc = { path = "../substrate-sora/frame/transaction-payment/rpc" }
-pallet-transaction-payment-rpc-runtime-api = { path = "../substrate-sora/frame/transaction-payment/rpc/runtime-api" }
-pallet-treasury = { path = "../substrate-sora/frame/treasury" }
-pallet-utility = { path = "../substrate-sora/frame/utility" }
-pallet-vesting = { path = "../substrate-sora/frame/vesting" }
-remote-externalities = { path = "../substrate-sora/utils/frame/remote-externalities" }
-sc-allocator = { path = "../substrate-sora/client/allocator" }
-sc-authority-discovery = { path = "../substrate-sora/client/authority-discovery" }
-sc-basic-authorship = { path = "../substrate-sora/client/basic-authorship" }
-sc-block-builder = { path = "../substrate-sora/client/block-builder" }
-sc-chain-spec = { path = "../substrate-sora/client/chain-spec" }
-sc-chain-spec-derive = { path = "../substrate-sora/client/chain-spec/derive" }
-sc-cli = { path = "../substrate-sora/client/cli" }
-sc-client-api = { path = "../substrate-sora/client/api" }
-sc-client-db = { path = "../substrate-sora/client/db" }
-sc-consensus = { path = "../substrate-sora/client/consensus/common" }
-sc-consensus-aura = { path = "../substrate-sora/client/consensus/aura" }
-sc-consensus-babe = { path = "../substrate-sora/client/consensus/babe" }
-sc-consensus-babe-rpc = { path = "../substrate-sora/client/consensus/babe/rpc" }
-sc-consensus-epochs = { path = "../substrate-sora/client/consensus/epochs" }
-sc-consensus-slots = { path = "../substrate-sora/client/consensus/slots" }
-sc-consensus-uncles = { path = "../substrate-sora/client/consensus/uncles" }
-sc-executor = { path = "../substrate-sora/client/executor" }
-sc-executor-common = { path = "../substrate-sora/client/executor/common" }
-sc-executor-wasmi = { path = "../substrate-sora/client/executor/wasmi" }
-sc-executor-wasmtime = { path = "../substrate-sora/client/executor/wasmtime" }
-sc-finality-grandpa = { path = "../substrate-sora/client/finality-grandpa" }
-sc-finality-grandpa-rpc = { path = "../substrate-sora/client/finality-grandpa/rpc" }
-sc-informant = { path = "../substrate-sora/client/informant" }
-sc-keystore = { path = "../substrate-sora/client/keystore" }
-sc-network = { path = "../substrate-sora/client/network" }
-sc-network-gossip = { path = "../substrate-sora/client/network-gossip" }
-sc-offchain = { path = "../substrate-sora/client/offchain" }
-sc-peerset = { path = "../substrate-sora/client/peerset" }
-sc-proposer-metrics = { path = "../substrate-sora/client/proposer-metrics" }
-sc-rpc = { path = "../substrate-sora/client/rpc" }
-sc-rpc-api = { path = "../substrate-sora/client/rpc-api" }
-sc-rpc-server = { path = "../substrate-sora/client/rpc-servers" }
-sc-service = { path = "../substrate-sora/client/service" }
-sc-state-db = { path = "../substrate-sora/client/state-db" }
-sc-sync-state-rpc = { path = "../substrate-sora/client/sync-state-rpc" }
-sc-sysinfo = { path = "../substrate-sora/client/sysinfo" }
-sc-telemetry = { path = "../substrate-sora/client/telemetry" }
-sc-tracing = { path = "../substrate-sora/client/tracing" }
-sc-tracing-proc-macro = { path = "../substrate-sora/client/tracing/proc-macro" }
-sc-transaction-pool = { path = "../substrate-sora/client/transaction-pool" }
-sc-transaction-pool-api = { path = "../substrate-sora/client/transaction-pool/api" }
-sc-utils = { path = "../substrate-sora/client/utils" }
-sp-api = { path = "../substrate-sora/primitives/api" }
-sp-api-proc-macro = { path = "../substrate-sora/primitives/api/proc-macro" }
-sp-application-crypto = { path = "../substrate-sora/primitives/application-crypto" }
-sp-arithmetic = { path = "../substrate-sora/primitives/arithmetic" }
-sp-authority-discovery = { path = "../substrate-sora/primitives/authority-discovery" }
-sp-authorship = { path = "../substrate-sora/primitives/authorship" }
-sp-block-builder = { path = "../substrate-sora/primitives/block-builder" }
-sp-blockchain = { path = "../substrate-sora/primitives/blockchain" }
-sp-consensus = { path = "../substrate-sora/primitives/consensus/common" }
-sp-consensus-aura = { path = "../substrate-sora/primitives/consensus/aura" }
-sp-consensus-babe = { path = "../substrate-sora/primitives/consensus/babe" }
-sp-consensus-slots = { path = "../substrate-sora/primitives/consensus/slots" }
-sp-consensus-vrf = { path = "../substrate-sora/primitives/consensus/vrf" }
-sp-core = { path = "../substrate-sora/primitives/core" }
-sp-core-hashing = { path = "../substrate-sora/primitives/core/hashing" }
-sp-core-hashing-proc-macro = { path = "../substrate-sora/primitives/core/hashing/proc-macro" }
-sp-database = { path = "../substrate-sora/primitives/database" }
-sp-debug-derive = { path = "../substrate-sora/primitives/debug-derive" }
-sp-externalities = { path = "../substrate-sora/primitives/externalities" }
-sp-finality-grandpa = { path = "../substrate-sora/primitives/finality-grandpa" }
-sp-inherents = { path = "../substrate-sora/primitives/inherents" }
-sp-io = { path = "../substrate-sora/primitives/io" }
-sp-keyring = { path = "../substrate-sora/primitives/keyring" }
-sp-keystore = { path = "../substrate-sora/primitives/keystore" }
-sp-maybe-compressed-blob = { path = "../substrate-sora/primitives/maybe-compressed-blob" }
-sp-mmr-primitives = { path = "../substrate-sora/primitives/merkle-mountain-range" }
-sp-npos-elections = { path = "../substrate-sora/primitives/npos-elections" }
-sp-offchain = { path = "../substrate-sora/primitives/offchain" }
-sp-panic-handler = { path = "../substrate-sora/primitives/panic-handler" }
-sp-rpc = { path = "../substrate-sora/primitives/rpc" }
-sp-runtime = { path = "../substrate-sora/primitives/runtime" }
-sp-runtime-interface = { path = "../substrate-sora/primitives/runtime-interface" }
-sp-runtime-interface-proc-macro = { path = "../substrate-sora/primitives/runtime-interface/proc-macro" }
-sp-serializer = { path = "../substrate-sora/primitives/serializer" }
-sp-session = { path = "../substrate-sora/primitives/session" }
-sp-staking = { path = "../substrate-sora/primitives/staking" }
-sp-state-machine = { path = "../substrate-sora/primitives/state-machine" }
-sp-std = { path = "../substrate-sora/primitives/std" }
-sp-storage = { path = "../substrate-sora/primitives/storage" }
-sp-tasks = { path = "../substrate-sora/primitives/tasks" }
-sp-timestamp = { path = "../substrate-sora/primitives/timestamp" }
-sp-tracing = { path = "../substrate-sora/primitives/tracing" }
-sp-transaction-pool = { path = "../substrate-sora/primitives/transaction-pool" }
-sp-transaction-storage-proof = { path = "../substrate-sora/primitives/transaction-storage-proof" }
-sp-trie = { path = "../substrate-sora/primitives/trie" }
-sp-version = { path = "../substrate-sora/primitives/version" }
-sp-version-proc-macro = { path = "../substrate-sora/primitives/version/proc-macro" }
-sp-wasm-interface = { path = "../substrate-sora/primitives/wasm-interface" }
-substrate-build-script-utils = { path = "../substrate-sora/utils/build-script-utils" }
-substrate-frame-rpc-system = { path = "../substrate-sora/utils/frame/rpc/system" }
-substrate-prometheus-endpoint = { path = "../substrate-sora/utils/prometheus" }
-substrate-state-trie-migration-rpc = { path = "../substrate-sora/utils/frame/rpc/state-trie-migration-rpc" }
-substrate-test-client = { path = "../substrate-sora/test-utils/client" }
-substrate-wasm-builder = { path = "../substrate-sora/utils/wasm-builder" }
-try-runtime-cli = { path = "../substrate-sora/utils/frame/try-runtime/cli" }
+beefy-gadget = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+beefy-gadget-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+beefy-merkle-tree = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+beefy-primitives = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+fork-tree = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-benchmarking = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-benchmarking-cli = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-election-provider-solution-type = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-election-provider-support = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-executive = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-support = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-support-procedural = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-support-procedural-tools = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-support-procedural-tools-derive = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-system-benchmarking = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-system-rpc-runtime-api = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-try-runtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+node-inspect = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-aura = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-authority-discovery = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-authorship = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-babe = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-bags-list = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-balances = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-beefy = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-beefy-mmr = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-bounties = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-child-bounties = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-collective = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-democracy = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-election-provider-multi-phase = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-elections-phragmen = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-gilt = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-grandpa = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-identity = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-im-online = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-indices = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-membership = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-mmr = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-mmr-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-multisig = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-nicks = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-offences = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-preimage = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-proxy = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-randomness-collective-flip = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-recovery = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-scheduler = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-session = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-society = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-staking = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-staking-reward-curve = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-staking-reward-fn = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-sudo = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-timestamp = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-tips = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-transaction-payment = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-transaction-payment-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-treasury = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-utility = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-vesting = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+remote-externalities = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-allocator = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-authority-discovery = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-basic-authorship = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-block-builder = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-chain-spec = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-chain-spec-derive = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-cli = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-client-api = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-client-db = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-consensus = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-consensus-aura = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-consensus-babe = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-consensus-babe-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-consensus-epochs = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-consensus-slots = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-consensus-uncles = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-executor = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-executor-common = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-executor-wasmi = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-executor-wasmtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-finality-grandpa = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-finality-grandpa-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-informant = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-keystore = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-network = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-network-gossip = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-offchain = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-peerset = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-proposer-metrics = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-rpc-api = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-rpc-server = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-service = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-state-db = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-sync-state-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-sysinfo = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-telemetry = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-tracing = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-tracing-proc-macro = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-transaction-pool = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-transaction-pool-api = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sc-utils = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-api = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-api-proc-macro = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-application-crypto = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-arithmetic = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-authority-discovery = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-authorship = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-block-builder = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-blockchain = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-consensus = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-consensus-aura = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-consensus-babe = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-consensus-slots = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-consensus-vrf = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-core = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-core-hashing = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-core-hashing-proc-macro = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-database = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-debug-derive = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-externalities = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-finality-grandpa = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-inherents = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-io = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-keyring = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-keystore = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-maybe-compressed-blob = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-mmr-primitives = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-npos-elections = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-offchain = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-panic-handler = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-runtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-runtime-interface = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-runtime-interface-proc-macro = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-serializer = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-session = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-staking = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-state-machine = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-std = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-storage = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-tasks = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-timestamp = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-tracing = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-transaction-pool = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-transaction-storage-proof = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-trie = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-version = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-version-proc-macro = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-wasm-interface = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+substrate-build-script-utils = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+substrate-frame-rpc-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+substrate-prometheus-endpoint = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+substrate-state-trie-migration-rpc = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+substrate-test-client = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+substrate-wasm-builder = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+try-runtime-cli = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 
 [patch."https://github.com/paritytech/polkadot"]
-kusama-runtime = { path = "../polkadot/runtime/kusama" }
-kusama-runtime-constants = { path = "../polkadot/runtime/kusama/constants" }
-prioritized-metered-channel = { path = "../polkadot/node/metered-channel" }
-pallet-xcm = { path = "../polkadot/xcm/pallet-xcm" }
-polkadot-approval-distribution = { path = "../polkadot/node/network/approval-distribution" }
-polkadot-availability-bitfield-distribution = { path = "../polkadot/node/network/bitfield-distribution" }
-polkadot-availability-distribution = { path = "../polkadot/node/network/availability-distribution" }
-polkadot-availability-recovery = { path = "../polkadot/node/network/availability-recovery" }
-polkadot-cli = { path = "../polkadot/cli" }
-polkadot-client = { path = "../polkadot/node/client" }
-polkadot-collator-protocol = { path = "../polkadot/node/network/collator-protocol" }
-polkadot-core-primitives = { path = "../polkadot/core-primitives" }
-polkadot-dispute-distribution = { path = "../polkadot/node/network/dispute-distribution" }
-polkadot-erasure-coding = { path = "../polkadot/erasure-coding" }
-polkadot-gossip-support = { path = "../polkadot/node/network/gossip-support" }
-polkadot-network-bridge = { path = "../polkadot/node/network/bridge" }
-polkadot-node-collation-generation = { path = "../polkadot/node/collation-generation" }
-polkadot-node-core-approval-voting = { path = "../polkadot/node/core/approval-voting" }
-polkadot-node-core-av-store = { path = "../polkadot/node/core/av-store" }
-polkadot-node-core-backing = { path = "../polkadot/node/core/backing" }
-polkadot-node-core-bitfield-signing = { path = "../polkadot/node/core/bitfield-signing" }
-polkadot-node-core-candidate-validation = { path = "../polkadot/node/core/candidate-validation" }
-polkadot-node-core-chain-api = { path = "../polkadot/node/core/chain-api" }
-polkadot-node-core-chain-selection = { path = "../polkadot/node/core/chain-selection" }
-polkadot-node-core-dispute-coordinator = { path = "../polkadot/node/core/dispute-coordinator" }
-polkadot-node-core-parachains-inherent = { path = "../polkadot/node/core/parachains-inherent" }
-polkadot-node-core-provisioner = { path = "../polkadot/node/core/provisioner" }
-polkadot-node-core-pvf = { path = "../polkadot/node/core/pvf" }
-polkadot-node-core-pvf-checker = { path = "../polkadot/node/core/pvf-checker" }
-polkadot-node-core-runtime-api = { path = "../polkadot/node/core/runtime-api" }
-polkadot-node-jaeger = { path = "../polkadot/node/jaeger" }
-polkadot-node-metrics = { path = "../polkadot/node/metrics" }
-polkadot-node-network-protocol = { path = "../polkadot/node/network/protocol" }
-polkadot-node-primitives = { path = "../polkadot/node/primitives" }
-polkadot-node-subsystem = { path = "../polkadot/node/subsystem" }
-polkadot-node-subsystem-types = { path = "../polkadot/node/subsystem-types" }
-polkadot-node-subsystem-util = { path = "../polkadot/node/subsystem-util" }
-polkadot-overseer = { path = "../polkadot/node/overseer" }
-orchestra = { path = "../polkadot/node/orchestra" }
-orchestra-proc-macro = { path = "../polkadot/node/orchestra/proc-macro" }
-polkadot-parachain = { path = "../polkadot/parachain" }
-polkadot-performance-test = { path = "../polkadot/node/test/performance-test" }
-polkadot-primitives = { path = "../polkadot/primitives" }
-polkadot-rpc = { path = "../polkadot/rpc" }
-polkadot-runtime = { path = "../polkadot/runtime/polkadot" }
-polkadot-runtime-common = { path = "../polkadot/runtime/common" }
-polkadot-runtime-constants = { path = "../polkadot/runtime/polkadot/constants" }
-polkadot-runtime-metrics = { path = "../polkadot/runtime/metrics" }
-polkadot-runtime-parachains = { path = "../polkadot/runtime/parachains" }
-polkadot-service = { path = "../polkadot/node/service" }
-polkadot-statement-distribution = { path = "../polkadot/node/network/statement-distribution" }
-polkadot-statement-table = { path = "../polkadot/statement-table" }
-polkadot-test-runtime = { path = "../polkadot/runtime/test-runtime" }
-polkadot-test-service = { path = "../polkadot/node/test/service" }
-slot-range-helper = { path = "../polkadot/runtime/common/slot_range_helper" }
-test-runtime-constants = { path = "../polkadot/runtime/test-runtime/constants" }
-tracing-gum = { path = "../polkadot/node/gum" }
-tracing-gum-proc-macro = { path = "../polkadot/node/gum/proc-macro" }
-xcm = { path = "../polkadot/xcm" }
-xcm-builder = { path = "../polkadot/xcm/xcm-builder" }
-xcm-executor = { path = "../polkadot/xcm/xcm-executor" }
-xcm-procedural = { path = "../polkadot/xcm/procedural" }
+kusama-runtime = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+kusama-runtime-constants = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+prioritized-metered-channel = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+pallet-xcm = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-approval-distribution = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-availability-bitfield-distribution = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-availability-distribution = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-availability-recovery = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-cli = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-client = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-collator-protocol = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-core-primitives = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-dispute-distribution = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-erasure-coding = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-gossip-support = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-network-bridge = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-collation-generation = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-approval-voting = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-av-store = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-backing = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-bitfield-signing = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-candidate-validation = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-chain-api = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-chain-selection = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-dispute-coordinator = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-parachains-inherent = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-provisioner = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-pvf = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-pvf-checker = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-core-runtime-api = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-jaeger = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-metrics = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-network-protocol = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-primitives = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-subsystem = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-subsystem-types = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-node-subsystem-util = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-overseer = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+orchestra = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+orchestra-proc-macro = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-parachain = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-performance-test = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-primitives = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-rpc = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-runtime = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-runtime-common = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-runtime-constants = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-runtime-metrics = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-runtime-parachains = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-service = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-statement-distribution = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-statement-table = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-test-runtime = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+polkadot-test-service = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+slot-range-helper = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+test-runtime-constants = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+tracing-gum = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+tracing-gum-proc-macro = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+xcm = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+xcm-builder = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+xcm-executor = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
+xcm-procedural = { git = "https://github.com/bragov4ik/polkadot.git", branch = "release-v0.9.25-xcm-v3-bridges" }
