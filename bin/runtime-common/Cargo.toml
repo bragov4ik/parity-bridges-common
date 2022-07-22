@@ -26,18 +26,18 @@ pallet-bridge-parachains = { path = "../../modules/parachains", default-features
 
 # Substrate dependencies
 
-frame-support = { path = "../../../substrate-sora/frame/support", default-features = false }
-frame-system = { path = "../../../substrate-sora/frame/system", default-features = false }
-pallet-balances = { path = "../../../substrate-sora/frame/balances", default-features = false, optional = true }
-pallet-transaction-payment = { path = "../../../substrate-sora/frame/transaction-payment", default-features = false }
-sp-api = { path = "../../../substrate-sora/primitives/api", default-features = false }
-sp-core = { path = "../../../substrate-sora/primitives/core", default-features = false }
-sp-io = { path = "../../../substrate-sora/primitives/io", default-features = false }
-sp-runtime = { path = "../../../substrate-sora/primitives/runtime", default-features = false }
-sp-state-machine = { path = "../../../substrate-sora/primitives/state-machine", default-features = false, optional = true }
-sp-std = { path = "../../../substrate-sora/primitives/std", default-features = false }
-sp-trie = { path = "../../../substrate-sora/primitives/trie", default-features = false }
-sp-version = { path = "../../../substrate-sora/primitives/version", default-features = false, optional = true }
+frame-support = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+frame-system = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+pallet-balances = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false, optional = true }
+pallet-transaction-payment = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-io = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false, optional = true }
+sp-std = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-trie = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-version = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false, optional = true }
 
 # Polkadot dependencies
 
