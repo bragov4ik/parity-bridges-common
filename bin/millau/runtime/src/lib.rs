@@ -237,6 +237,7 @@ impl pallet_aura::Config for Runtime {
 
 impl pallet_beefy::Config for Runtime {
 	type BeefyId = BeefyId;
+	type MaxAuthorities = MaxAuthorities;
 }
 
 impl pallet_grandpa::Config for Runtime {
@@ -735,6 +736,47 @@ impl_runtime_apis! {
 	}
 
 	impl sp_mmr_primitives::MmrApi<Block, MmrHash> for Runtime {
+
+		/// Verify MMR proof against on-chain MMR.
+		///
+		/// Note this function will use on-chain MMR root hash and check if the proof
+		/// matches the hash.
+		/// See [Self::verify_proof_stateless] for a stateless verifier.
+		fn verify_proof(leaf: EncodableOpaqueLeaf, proof: Proof<Hash>) -> Result<(), Error>;
+
+		/// Verify MMR proof against given root hash.
+		///
+		/// Note this function does not require any on-chain storage - the
+		/// proof is verified against given MMR root hash.
+		///
+		/// The leaf data is expected to be encoded in it's compact form.
+		fn verify_proof_stateless(root: Hash, leaf: EncodableOpaqueLeaf, proof: Proof<Hash>)
+			-> Result<(), Error>;
+
+		/// Return the on-chain MMR root hash.
+		fn mmr_root() -> Result<Hash, Error>;
+
+		/// Generate MMR proof for a series of leaves under given indices.
+		fn generate_batch_proof(leaf_indices: Vec<LeafIndex>) -> Result<(Vec<EncodableOpaqueLeaf>, BatchProof<Hash>), Error>;
+
+		/// Verify MMR proof against on-chain MMR for a batch of leaves.
+		///
+		/// Note this function will use on-chain MMR root hash and check if the proof
+		/// matches the hash.
+		/// Note, the leaves should be sorted such that corresponding leaves and leaf indices have the
+		/// same position in both the `leaves` vector and the `leaf_indices` vector contained in the [BatchProof]
+		fn verify_batch_proof(leaves: Vec<EncodableOpaqueLeaf>, proof: BatchProof<Hash>) -> Result<(), Error>;
+
+		/// Verify MMR proof against given root hash or a batch of leaves.
+		///
+		/// Note this function does not require any on-chain storage - the
+		/// proof is verified against given MMR root hash.
+		///
+		/// Note, the leaves should be sorted such that corresponding leaves and leaf indices have the
+		/// same position in both the `leaves` vector and the `leaf_indices` vector contained in the [BatchProof]
+		fn verify_batch_proof_stateless(root: Hash, leaves: Vec<EncodableOpaqueLeaf>, proof: BatchProof<Hash>)
+			-> Result<(), Error>;
+		
 		fn generate_proof(leaf_index: u64)
 			-> Result<(EncodableOpaqueLeaf, MmrProof<MmrHash>), MmrError>
 		{
@@ -763,7 +805,7 @@ impl_runtime_apis! {
 		) -> Result<(), MmrError> {
 			type MmrHashing = <Runtime as pallet_mmr::Config>::Hashing;
 			let node = DataOrHash::Data(leaf.into_opaque_leaf());
-			pallet_mmr::verify_leaf_proof::<MmrHashing, _>(root, node, proof)
+			pallet_mmr::verify_leaves_proof::<MmrHashing, _>(root, vec![node], proof)
 		}
 
 		fn mmr_root() -> Result<MmrHash, MmrError> {

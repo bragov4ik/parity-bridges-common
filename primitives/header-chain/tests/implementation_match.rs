@@ -126,15 +126,15 @@ fn same_result_when_precommit_target_has_lower_number_than_commit_target() {
 		),
 		Err(Error::PrecommitIsNotCommitDescendant),
 	);
-	// original implementation returns empty GHOST
+	// original implementation returns invalidity
 	assert_matches!(
 		finality_grandpa::validate_commit(
 			&justification.commit,
 			&full_voter_set(),
 			&AncestryChain::new(&justification.votes_ancestries),
 		)
-		.map(|result| result.ghost().cloned()),
-		Ok(None)
+		.map(|result| result.is_valid()),
+		Ok(false)
 	);
 }
 
@@ -165,8 +165,8 @@ fn same_result_when_precommit_target_is_not_descendant_of_commit_target() {
 			&full_voter_set(),
 			&AncestryChain::new(&justification.votes_ancestries),
 		)
-		.map(|result| result.ghost().cloned()),
-		Ok(None)
+		.map(|result| result.is_valid()),
+		Ok(false)
 	);
 }
 
@@ -195,8 +195,8 @@ fn same_result_when_justification_contains_duplicate_vote() {
 			&full_voter_set(),
 			&AncestryChain::new(&justification.votes_ancestries),
 		)
-		.map(|result| result.ghost().cloned()),
-		Ok(Some(_))
+		.map(|result| result.is_valid()),
+		Ok(true)
 	);
 }
 
@@ -229,8 +229,8 @@ fn same_result_when_authority_equivocates_once_in_a_round() {
 			&full_voter_set(),
 			&AncestryChain::new(&justification.votes_ancestries),
 		)
-		.map(|result| result.ghost().cloned()),
-		Ok(Some(_))
+		.map(|result| result.is_valid()),
+		Ok(true)
 	);
 }
 
@@ -273,8 +273,8 @@ fn same_result_when_authority_equivocates_twice_in_a_round() {
 			&full_voter_set(),
 			&AncestryChain::new(&justification.votes_ancestries),
 		)
-		.map(|result| result.ghost().cloned()),
-		Ok(Some(_))
+		.map(|result| result.is_valid()),
+		Ok(true)
 	);
 }
 
@@ -306,7 +306,7 @@ fn same_result_when_there_are_not_enough_cumulative_weight_to_finalize_commit_ta
 			&full_voter_set(),
 			&AncestryChain::new(&justification.votes_ancestries),
 		)
-		.map(|result| result.ghost().cloned()),
-		Ok(None)
+		.map(|result| result.is_valid()),
+		Ok(false)
 	);
 }
